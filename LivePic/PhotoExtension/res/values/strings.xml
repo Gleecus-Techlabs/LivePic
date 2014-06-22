@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LivePic</string>
+    <string name="welcome_text">A Chat can happen over a picture</string>
+    <string name="camera">Camera</string>
+    <string name="photo">Photo</string>
+    <string name="video">Video</string>
+    <string name="shopping">Shopping</string>
+    <string name="link">Link</string>
+    <string name="location">Location</string>
+    <string name="contacts">Contacts</string>
+    <string name="audio">Audio</string>
+    <string name="chat">Chat</string>
+    <string name="hotspot">Hotspot</string>
+    <string name="hotspot_save">Do you want to save Hotspots?</string>
+    <string name="hotspot_saved">Hotspot are saved, Successfully</string>
+    <string name="no_imagelevel_hotspot">No image level Hotspot</string>
+    <string name="no_hotspot">No Hotspot added</string>
+    <string name="hotspot_deleted">Hotspot deleted</string>
+    <string name="delete_options">Delete Options</string>
+    <string name="delete_hotspot">Delete Hotspot</string>
+    <string name="delete_properties">Delete Properties</string>
+    <string name="overwrite_selected_media">Overwrite the selected media?</string>
+    <string name="media_select">Select a media file</string>
+    <string name="no_audio_selected">No audio file selected</string>
+    <string name="overwite_recorded_audio">Overwrite the recorded audio?</string>
+    <string name="new_feature">New Feature</string>
+    <string name="capture_cancelled">Image capture cancelled</string>
+    <string name="invalid_url">Invalid url</string>
+    <string name="empty_url">Url is empty</string>
+    <string name="successfull_updation">Updated successfully</string>
+    <string name="shopping_links">Shopping links to hotspot</string>
+    <string name="poi_location">Define Points of Interest around location</string>
+    <string name="video_annotation">Future feature – Video Annotation </string>
+    <string name="assign_to_contacts">Assign hotspots to contacts</string>
+
+</resources>
