@@ -344,7 +344,7 @@ public class AddHotspotToImage extends Activity implements OnTouchListener,
 		hotspot.setClickable(true);
 		hotspot.setEnabled(true);
 		RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(
-				48, 48);
+				60, 60);
 		displacement();
 		
 		Matrix tempMat = selectedImg.getImageMatrix();
@@ -1363,7 +1363,7 @@ public class AddHotspotToImage extends Activity implements OnTouchListener,
 				ImageView hotspot = new ImageView(this);
 				hotspot.setImageResource(R.drawable.boundary);
 				RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(
-						48, 48);
+						60, 60);
 				layoutParams.leftMargin = (int) h.getXPosition();
 						//- HotspotDetails.densityDpi / 10;
 				layoutParams.topMargin = (int) h.getYPosition();
@@ -1411,7 +1411,7 @@ public class AddHotspotToImage extends Activity implements OnTouchListener,
 					ImageView hotspot = new ImageView(this);
 					hotspot.setImageResource(R.drawable.boundary);
 					RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(
-							48, 48);
+							60, 60);
 					layoutParams.leftMargin = (int) h.getXPosition();
 							//- HotspotDetails.densityDpi / 10;
 					layoutParams.topMargin = (int) h.getYPosition();

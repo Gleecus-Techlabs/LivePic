@@ -1,7 +1,5 @@
 package com.relevance.photoextension.model;
 
-import android.widget.ImageView;
-
 public class Hotspot {
 
 	private int pid;
@@ -11,7 +9,6 @@ public class Hotspot {
 	private String audioFile;
 	private String inputUrl;
 	private int mediaTypeFlag;
-	private ImageView iView;
 
 	public Hotspot() {
 		// Default Constructor
@@ -26,7 +23,6 @@ public class Hotspot {
 		this.inputUrl = inputUrl;
 		this.audioFile = audioFile;
 		this.mediaTypeFlag = mediaTypeFlag;
-		this.iView = null;
 	}
 
 	public int getPid() {
@@ -83,13 +79,5 @@ public class Hotspot {
 
 	public void setMediaTypeFlag(int mediaTypeFlag) {
 		this.mediaTypeFlag = mediaTypeFlag;
-	}
-	
-	public ImageView getImageView() {
-		return this.iView;
-	}
-	
-	public void setImageView(ImageView iv) {
-		this.iView = iv;
 	}
 }

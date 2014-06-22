@@ -4,14 +4,28 @@
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:background="@drawable/background1" >
-
+	
+    <GridView 
+	    android:id="@+id/grid_view"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:columnWidth="90dp"
+	    android:horizontalSpacing="10dp"
+	    android:verticalSpacing="10dp"
+	    android:numColumns="auto_fit"
+	    android:gravity="center"
+	    android:stretchMode="columnWidth"
+	    >
+	</GridView>
+    
     <ImageView
         android:id="@+id/down_button"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/down" />
+        android:src="@drawable/down"
+        android:visibility="invisible" />
 
     <ImageView
         android:id="@+id/up_button"
@@ -19,17 +33,18 @@
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/up" />
+        android:src="@drawable/up"
+        android:visibility="invisible" />
 
-    <ImageView
+    <!--  <ImageView
         android:id="@+id/launcher_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/ic_launcher" />
+        android:src="@drawable/ic_launcher" />-->
 
-    <TextView
+    <!-- <TextView
         android:id="@+id/welcome_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,7 +52,31 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="12dp"
         android:text="@string/welcome_text"
-        android:textColor="#E0F8F7" />
+        android:textColor="#E0F8F7" /> -->
+    
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_centerVertical="true"
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/up" />
+		<!-- android:text="Handle" -->
+		
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/grey_back" >
 
     <TableLayout
         android:id="@+id/tableLayout1"
@@ -128,5 +167,7 @@
                 android:src="@drawable/chat" />
         </TableRow>
     </TableLayout>
+    </LinearLayout>
+   </SlidingDrawer>
 
 </RelativeLayout>

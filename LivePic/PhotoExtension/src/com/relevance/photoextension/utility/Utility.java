@@ -106,10 +106,6 @@ public final class Utility {
 
 		Bitmap imageBitmap = decodeSampledBitmapFromFile(imageFilePath,
 				selectedImg.getWidth(), selectedImg.getHeight());
-		
-		int x = imageBitmap.getWidth();
-		int y = imageBitmap.getHeight();
-		
 		int rotate = getCameraPhotoOrientation(context,
 				Uri.fromFile(new File(imageFilePath)), imageFilePath);
 		if (rotate != 0) {
